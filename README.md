@@ -4,12 +4,21 @@
 #qmqtt库的引入使用
 在qt5中使用qtmqtt库qtmqtt库源码下载链接
 链接：https://pan.baidu.com/s/1TyqbLX5x17mwhAX-OJiorw提取码：i6wwperl安装下载链接
-链接：https://pan.baidu.com/s/1xQTMjChlr2mSothEHbMRzA提取码：jqxs下载qtmqtt库源码，打开qtmqtt文件夹中的qtmqtt.pro工程文件1.使用release编译，期间出现perl错误，下载perl安装，2. 编译完成后将qtmqtt/src/mqtt拷贝到Qt/5.13/mingw53_32/include（qt安装路径），并删除mqtt目录下的所有非头文件在qt安装路径  D:\Qt\Qt5.10.0\5.10.0\mingw53_32\include目录下新建文件夹QtMqtt。将第二步中的mqtt文件夹复制到这个路径下复制完mqtt文件夹的路径为 C:\Qt\5.12.3\mingw73_64\include\QtMqtt\mqtt3.将mqtt编译出来的lib目录下的2个dll和两个.a和2个prl拷贝到Qt/5.13/mingw53_32/lib4.将mqtt编译出来的bin目录下的2个dll拷贝到Qt/5.13/mingw53_32/bin5.将mqtt编译出来的mkspecs\modules下的pri文件拷贝到Qt/5.13/mingw53_32/mkspecs/modulesqtmqtt库的使用：在项目工程文件中添加：QT += mqtt在程序文件中：#include <QtMqtt/QtMqtt>
-或者参考下边是网络上的qmqtt下载安装教程
+链接：https://pan.baidu.com/s/1xQTMjChlr2mSothEHbMRzA提取码：jqxs下载qtmqtt库源码，打开qtmqtt文件夹中的qtmqtt.pro工程文件
+1.使用release编译，期间出现perl错误，下载perl安装，
+2. 编译完成后将qtmqtt/src/mqtt拷贝到Qt/5.13/mingw53_32/include（qt安装路径），并删除mqtt目录下的所有非头文件在qt安装路径  D:\Qt\Qt5.10.0\5.10.0\mingw53_32\include目录下新建文件夹QtMqtt。将第二步中的mqtt文件夹复制到这个路径下复制完mqtt文件夹的路径为 C:\Qt\5.12.3\mingw73_64\include\QtMqtt\mqtt
+3.将mqtt编译出来的lib目录下的2个dll和两个.a和2个prl拷贝到Qt/5.13/mingw53_32/lib
+4.将mqtt编译出来的bin目录下的2个dll拷贝到Qt/5.13/mingw53_32/bin
+5.将mqtt编译出来的mkspecs\modules下的pri文件拷贝到Qt/5.13/mingw53_32/mkspecs/modules
+qtmqtt库的使用：
+在项目工程文件中添加：QT += mqtt
+在程序文件中：#include <QtMqtt/QtMqtt>
+
+或者参考下边是网络上的qmqtt下载安装教程（供参考）
 其中项目需要使用到qmqtt的库 以zip的形式打包在文件中
 库的安装方法参考 https://blog.csdn.net/luoyayun361/article/details/104671603
 
-改PC软件与设备端通过MQTT通讯
+该PC软件与WS开头的各种物联网设备端通过MQTT通讯
 通讯协议使用XC_Link 具体如下
 [TOC]
 # XC_Link

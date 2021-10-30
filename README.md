@@ -1,0 +1,2 @@
+# WS_MQTT_COUNTROL_TOOL
+使用QT5开发WS设备的环境监测及控制客户端

@@ -1,0 +1,7 @@
+MQTT_countrol_TOOL/debug
+MQTT_countrol_TOOL/release
+*.qmake.stash
+*Makefile
+*.Debug
+*.Release
+*.user

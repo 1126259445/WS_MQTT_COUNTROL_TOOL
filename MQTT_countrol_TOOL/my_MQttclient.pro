@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui mqtt
+RC_ICONS = ws.ico
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
